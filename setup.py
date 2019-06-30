@@ -52,4 +52,4 @@ setup(
 	 '' : ['*.bit','*.tcl'],
 	},
 	description = "Neo Pixel Driver for PYN1 Z2",
-
+)
