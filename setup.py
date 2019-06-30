@@ -9,7 +9,7 @@ board = os.environ['BOARD']
 repo_board_folder = f'boards/{board}/neo_pixel'
 board_notebooks_dir = os.environ['PYNQ_JUPYTER_NOTEBOOKS']
 hw_data_files = []
-ovl_dest = 'neo_pynq'
+ovl_dest = 'neo_pixel'
 
 
 # check whether board is supported
@@ -31,7 +31,7 @@ def copy_overlays():
 # copy notebooks to jupyter home
 def copy_notebooks():
     src_nb_dir = os.path.join(repo_board_folder, 'notebook')
-    dst_nb_dir = os.path.join(board_notebooks_dir, 'neopixel')
+    dst_nb_dir = os.path.join(board_notebooks_dir, 'neo_pixel')
     if os.path.exists(dst_nb_dir):
         shutil.rmtree(dst_nb_dir)
     copy_tree(src_nb_dir, dst_nb_dir)
@@ -42,7 +42,7 @@ copy_overlays()
 copy_notebooks()
 
 setup(
-	name= "neo_pynq",
+	name= "neo_pixel",
 	version= "1.1",
 	url= 'https://github.com/ATaylorCEngFIET/pynq_neopixel.git',
 	license = 'Apache Software License',
