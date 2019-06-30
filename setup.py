@@ -7,6 +7,7 @@ import shutil
 # global variables
 board = os.environ['BOARD']
 repo_board_folder = f'boards/{board}/neo_pixel'
+puts (repo_board_folder)
 board_notebooks_dir = os.environ['PYNQ_JUPYTER_NOTEBOOKS']
 hw_data_files = []
 
