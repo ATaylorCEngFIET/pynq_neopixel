@@ -9,6 +9,7 @@ board = os.environ['BOARD']
 repo_board_folder = f'boards/{board}/neo_pixel'
 board_notebooks_dir = os.environ['PYNQ_JUPYTER_NOTEBOOKS']
 hw_data_files = []
+ovl_dest = 'neo_pynq'
 
 
 # check whether board is supported
@@ -22,7 +23,7 @@ def check_env():
 # copy overlays to python package
 def copy_overlays():
     src_ol_dir = os.path.join(repo_board_folder, 'bitstream')
-    dst_ol_dir = os.path.join('neo_pynq', 'bitstream')
+    dst_ol_dir = os.path.join(ovl_dest, 'bitstream')
     copy_tree(src_ol_dir, dst_ol_dir)
     hw_data_files.extend([os.path.join("..", dst_ol_dir, f) for f in os.listdir(dst_ol_dir)])
 
