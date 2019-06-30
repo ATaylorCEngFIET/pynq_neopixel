@@ -42,7 +42,7 @@ copy_notebooks()
 
 setup(
 	name = "neo_pynq",
-	version = neo_pynq.__version__,
+	version = "1.0",
 	url = 'https://github.com/ATaylorCEngFIET/pynq_neopixel',
 	license = 'Apache Software License',
 	author = "Adam Taylor",
