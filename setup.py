@@ -7,7 +7,6 @@ import shutil
 # global variables
 board = os.environ['BOARD']
 repo_board_folder = f'boards/{board}/neo_pixel'
-print (repo_board_folder)
 board_notebooks_dir = os.environ['PYNQ_JUPYTER_NOTEBOOKS']
 hw_data_files = []
 
@@ -44,7 +43,7 @@ copy_notebooks()
 setup(
 	name = "neo_pynq",
 	version = "1.1",
-	url = 'https://github.com/ATaylorCEngFIET/pynq_neopixel',
+	url = 'https://github.com/ATaylorCEngFIET/pynq_neopixel.git',
 	license = 'Apache Software License',
 	author = "Adam Taylor",
 	author_email = "adam@adiuvoengineering.com",
