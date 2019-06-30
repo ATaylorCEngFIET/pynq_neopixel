@@ -41,15 +41,15 @@ copy_overlays()
 copy_notebooks()
 
 setup(
-	name = "neo_pynq",
-	version = "1.1",
-	url = 'https://github.com/ATaylorCEngFIET/pynq_neopixel.git',
+	name= "neo_pynq",
+	version= "1.1",
+	url= 'https://github.com/ATaylorCEngFIET/pynq_neopixel.git',
 	license = 'Apache Software License',
-	author = "Adam Taylor",
-	author_email = "adam@adiuvoengineering.com",
-	packages = find_packages(),
-	package_data = {
+	author= "Adam Taylor",
+	author_email= "adam@adiuvoengineering.com",
+	packages= find_packages(),
+	package_data= {
 	 '': hw_data_files,
 	},
-	description = "Neo Pixel Driver for PYN1 Z2",
+	description= "Neo Pixel Driver for PYN1 Z2",
 )
