@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-import pynq_proj
+#import neo_pynq
 from distutils.dir_util import copy_tree
 import os
 import shutil
