@@ -1,4 +1,4 @@
-from setuptools import setup, find_pakages
+from setuptools import setup, find_packages
 import pynq_proj
 from distutils.dir_util import copy_tree
 import os
