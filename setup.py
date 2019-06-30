@@ -49,7 +49,7 @@ setup(
 	author_email = "adam@adiuvoengineering.com",
 	packages = find_packages(),
 	package_data = {
-	 '' : hw_data_files,
+	 '': hw_data_files,
 	},
 	description = "Neo Pixel Driver for PYN1 Z2",
 )
