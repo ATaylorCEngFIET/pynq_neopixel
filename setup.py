@@ -47,7 +47,7 @@ setup(
 	license = 'Apache Software License',
 	author = "Adam Taylor",
 	author_email = "adam@adiuvoengineering.com",
-	packages = ['neo'],
+	packages = find_packages(),
 	package_data = {
 	 '' : ['*.bit','*.tcl'],
 	},
